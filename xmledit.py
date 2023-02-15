@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import re
 
-xmlfile='class.xml'
+xmlfile='class extend.xml'
 
 tree = ET.parse(xmlfile)
 root = tree.getroot()
