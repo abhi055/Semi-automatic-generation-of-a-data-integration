@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import re
 
-xmlfile='class extend.xml'
+xmlfile='sub class.xml'
 
 tree = ET.parse(xmlfile)
 root = tree.getroot()
@@ -23,13 +23,15 @@ root = tree.getroot()
 for ele in root.findall(".//mxCell[@value][@style]"):
 
     shape = ele.attrib['style']
-    if re.search('ellipse',shape):
+    if re.search('doubleEllipse',shape) or re.search('rounded=0',shape):
         a = ele.attrib['value']
         print(a)
-    elif re.search('rounded=0',shape):
+        # b = re.search('>(.*)<',a)
+        # print(b.group(1))
+    elif re.search('ellipse',shape):
         a = ele.attrib['value']
-        b = re.search('>(.*)<',a)
-        print(b.group(1))
+        print(a)
+        
     
 
 
