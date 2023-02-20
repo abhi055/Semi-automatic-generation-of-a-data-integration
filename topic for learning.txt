@@ -1,0 +1,2 @@
+how to create library in draw.io
+syntax directed translation for xml data parsing
