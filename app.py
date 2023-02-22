@@ -4,7 +4,7 @@ from turtle_creation.transformation import transform_ontology
 from turtle_creation.utils import read_drawio_xml
 
 def main():
-    xmlfile='class.xml'
+    xmlfile='sub class.xml'
     root = read_drawio_xml(xmlfile)
     turtle_file_string = transform_ontology(root)
     

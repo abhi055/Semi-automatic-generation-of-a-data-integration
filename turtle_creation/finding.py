@@ -16,7 +16,7 @@ class Finder():
             #     if 'rounded=0' in style:
 
 
-            print(style)
+            print(value)
 
     def find_elements(self):
         label_class,anonimous_class = self.find_concepts_and_attributes()
